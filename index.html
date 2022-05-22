@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <title>Password Generator</title>
+    </head>
+    <body>
+
+        <main>
+          <div class="header">
+
+            <h1>Generate a <span class="title-bold"><br><strong>random password</strong></span></h1>
+            <h2>Never use an insecure password again.</h2>
+
+            <div class="flex-btn">
+                <button type="button" name="button" id="generate-btn" onclick="generatePass()"><img src="img/lightning.png" alt="lighting icon in white" id="lightning-icon"> Generate passwords</button>
+                    <p class="value-val">Password length: <span id="slider-val">15</span></p>
+                    <input type="range" min="10" max="18" value=""class="pass-length" id="sliderRange" onchange="slider()">
+
+
+
+            </div>
+
+          </div>
+
+          <p class="alertP">
+            <output name="result"type="text" value=""id="alert" class="alert">Click to copy to clipboard</output>
+          </p>
+
+          <div class="output-boxes">
+
+            <div id="box1" class="boxes" >
+              <p id="password-1" onclick="copyToClipBoard1()"><img src="img/loading_dots.png" alt="loading dots"></p>
+            </div>
+
+            <div id="box2" class="boxes">
+              <p id="password-2" onclick="copyToClipBoard2()"><img src="img/loading_dots.png" alt="loading dots"></p>
+            </div>
+
+            <div id="box3" class="boxes">
+              <p id="password-3" onclick="copyToClipBoard3()"><img src="img/loading_dots.png" alt="loading dots"></p>
+            </div>
+
+            <div id="box4" class="boxes">
+              <p id="password-4" onclick="copyToClipBoard4()"><img src="img/loading_dots.png" alt="loading dots"></p>
+            </div>
+
+          </div>
+
+        </main>
+
+        <script rel="stylesheet" src="index.js"></script>
+    </body>
+</html>
