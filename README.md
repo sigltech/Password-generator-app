@@ -7,3 +7,8 @@ Choose any password and click to copy to clipboard
 
 - Generate password based on a specified length
 - Copy password to clipboard by clicking on the password
+
+## Installation
+
+- Clone the repository
+- Open the index.html file in your browser either with a live server or simply by opening the file in your browser
