@@ -1,14 +1,17 @@
-html, body {
+*, html, body {
     margin: 0;
     padding: 0;
 }
 
 body {
   background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+
 }
 
 .header {
-    position: relative;
+  position: relative;
   border-bottom: 1px solid #2F3E53;
   /* margin-left: 52px; */
   margin-right: 52px;
@@ -101,7 +104,8 @@ main {
   position: absolute;
   width: 550px;
   height: 550px;
-  left: 62px;
+  margin: 0 auto;
+  left: calc(100% / 2 - 550px / 2);
   top: 64px;
   font-family: 'Inter';
   font-style: normal;
@@ -285,9 +289,176 @@ main {
   border: none;
 }
 
-/* .alert:active {
-  animation-duration: 5s;
-  animation-iteration-count: 2;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-} */
+@media only screen and (min-width: 756px) {
+
+  html {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+
+  }
+
+  body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; */
+    width: 100vw;
+    height: 100vh;
+    background: #1F2937;
+  }
+
+  main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0 3rem;
+    padding-top: 5rem;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    width: 100%;
+    top: 0;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 3rem;
+    border: none;
+  }
+
+  .header h1 {
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 7rem;
+    line-height: 7.5rem;
+  }
+
+  .header h2 {
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 3.4rem;
+  }
+
+  .output-boxes {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sliderRange::-webkit-slider-thumb {
+    height: 70px;
+    width: 70px;
+    margin: 0;
+  }
+
+  p.alertP,
+  .alert {
+    margin: 4rem 0;
+    font-size: 2.5rem;
+  }
+
+  .flex-btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #generate-btn {
+    margin-bottom: 20px;
+    margin-top: 21px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 5rem;
+    background: rgba(16, 185, 129, 1);
+    border: none;
+    box-shadow: 2px 1px 2px rgb(0 0 0 / 5%);
+    border-radius: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+  }
+
+  #lightning-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .value-val {
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin: 3rem 0;
+    justify-content: center;
+  
+  }
+
+  .flex-btn p,
+  #slider-val {
+    padding: 0;
+    font-size: 3rem;
+  }
+
+  .output-boxes {
+    justify-content: space-between;
+    height: 40%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .boxes {
+    margin: 0;
+    position: relative;
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .passwords {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .passwords img {
+    margin: 0;
+  }
+
+  #box1,
+  #box2,
+  #box3,
+  #box4 {
+    margin: 0;
+    margin-top: 5rem;
+  }
+
+  .output-boxes .boxes p {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+  }
+}

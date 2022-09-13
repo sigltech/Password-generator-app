@@ -109,6 +109,7 @@ function copyToClipBoard1() {
   navigator.clipboard.writeText(pass1.textContent);
   /* Alert the copied text */
   document.getElementById("alert").value = "Copied to clipboard!";
+  document.getElementById("alert").style.color = "red";
 }
 
 function copyToClipBoard2() {
@@ -119,6 +120,7 @@ function copyToClipBoard2() {
   navigator.clipboard.writeText(pass2.textContent);
   /* Alert the copied text */
   document.getElementById("alert").value = "Copied to clipboard!";
+  document.getElementById("alert").style.color = "red";
 }
 
 function copyToClipBoard3() {
@@ -129,6 +131,7 @@ function copyToClipBoard3() {
   navigator.clipboard.writeText(pass3.textContent);
   /* Alert the copied text */
   document.getElementById("alert").value = "Copied to clipboard!";
+  document.getElementById("alert").style.color = "red";
 }
 
 function copyToClipBoard4() {
@@ -139,4 +142,5 @@ function copyToClipBoard4() {
   navigator.clipboard.writeText(pass4.textContent);
   /* Alert the copied text */
   document.getElementById("alert").value = "Copied to clipboard!";
+  document.getElementById("alert").style.color = "red";
 }
